@@ -11,7 +11,7 @@ import { Race } from '../race/race';
 })
 export class RaceDetailsComponent implements OnInit {
 private raceId: string;
-private race: Race;
+public race: Race;
 
   constructor(private route: ActivatedRoute, private router: Router, private raceService: RaceService) { }
 
