@@ -1,0 +1,36 @@
+h2 {
+  color: #9397d8;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+
+.date, .price {
+  color: #9397d8;
+}
+
+.description {
+  color: #66d9f7;
+}
+
+
+
+.cash {
+  background: #000;
+  border: none;
+  display: inline-block;
+  height: 30px;
+  margin: 0px;
+  width: 150px;
+}
+
+/* ----- State ----- */
+
+.unavailble {
+  background: #505050;
+}
+
+.unavailble .button {
+  background: #707070;
+  color: #aeaeae;
+}

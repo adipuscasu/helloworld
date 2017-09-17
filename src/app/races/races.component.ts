@@ -1,0 +1,45 @@
+import { Component, OnInit } from '@angular/core';
+import {Race} from '../race/race';
+import {RaceService} from '../races/race.service';
+
+@Component({
+  selector: 'app-races',
+  templateUrl: './races.component.html',
+  styleUrls: ['./races.component.scss']
+})
+export class RacesComponent implements OnInit {
+  heading = 'Ultra Racing Schedule';
+  cash = 10000;
+  races: Race[];
+
+  constructor(private raceService: RaceService) { }
+
+  ngOnInit() {
+    this.raceService.getRaces()
+    .subscribe(data => this.races = data);
+  }
+  totalCost() {
+    let sum = 0;
+    if (this.races) {
+      for (const race of this.races) {
+        if (race.isRacing) {
+          sum += race.entryFee;
+        }
+      }
+    }
+    return sum;
+  }
+  cashLeft() {
+    return this.cash - this.totalCost();
+  }
+
+  enterRace(race) {
+    if (this.cashLeft() > race.entryFee) {
+      race.isRacing = true;
+    } else {
+      alert('You don\'t have enough cash');
+    }
+  }
+
+
+}
