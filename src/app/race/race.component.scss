@@ -1,89 +1,89 @@
 
 .button {
-    background: #fd79fc;
-    border-radius: 3px;
-    border: 0;
-    color: #ffffff;
-    width: 120px;
-  }
-  
-  .button-cancel {
-    background: none;
-    border: 0;
-    color: #fd79fc;
-    text-decoration: underline;
-    width: 120px;
-  }
-  
+  background: #fd79fc;
+  border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  width: 120px;
+}
+
+.button-cancel {
+  background: none;
+  border: 0;
+  color: #fd79fc;
+  text-decoration: underline;
+  width: 120px;
+}
+
 .card {
-    background: #44464c;
-    margin-bottom: 30px;
-    min-height: 160px;
-  }
-  
-  .card.racing {
-    background: #24262c;
-  }
+  background: #44464c;
+  margin-bottom: 30px;
+  min-height: 160px;
+}
+
+.card.racing {
+  background: #24262c;
+}
 
 .panel-body {
-    display: table;
-    padding: 0;
-  }
-  
-  .photo {
-    float: left;
-    margin-right: 30px;
-  }
+  display: table;
+  padding: 0;
+}
 
-  .price {
+.photo {
+  float: left;
+  margin-right: 30px;
+}
+
+.price {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  width: 120px;
+}
+
+.price-total {
+  background:  #9179b7;
+  float: right;
+  margin: 0px 0;
+  padding: 20px 50px;
+
+  h3, p {
+    display: inline-block;
     margin: 0;
+  }
+  p {
+    color: #362751;
     font-size: 18px;
-    text-align: center;
-    width: 120px;
+    font-weight: bold;
   }
-  
-  .price-total { 
-    background:  #9179b7;
-    float: right;
-    margin: 0px 0;
-    padding: 20px 50px;
+  h3 {
+    font-size: 18px;
+    margin-right: 60px;
+  }
+}
 
-    h3, p {
-      display: inline-block;
-      margin: 0;
+.race-info {
+  display: table-cell;
+  vertical-align: middle;
+  h3 {
+    margin: 0 0;
+    a {
+      color: white;
     }
-    p {
-      color: #362751;
-      font-size: 18px;
-      font-weight: bold;
-    }  
-    h3 {
-      font-size: 18px;
-      margin-right: 60px;
-    } 
   }
+  td:last-child {
+    padding: 0 20px;
+  }
+  tbody, tr, td {
+    width: 100%;
+  }
+  tbody {
+    display: inline-block;
+  }
+}
 
-  .race-info {
-    display: table-cell;
-    vertical-align: middle;
-    h3 {
-      margin: 0 0;
-      a {
-        color: white;
-      }
-    }
-    td:last-child {
-      padding: 0 20px;
-    }
-    tbody, tr, td {
-      width: 100%;
-    }
-    tbody {
-      display: inline-block;
-    }
-  }
-  
 .status {
-    color: #fd79fc;
-    text-align: center;
-  }
+  color: #fd79fc;
+  text-align: center;
+}

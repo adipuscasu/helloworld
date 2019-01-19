@@ -5,7 +5,6 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class RaceService {
-private races: Race[];
 
   constructor(private http: Http) { }
 

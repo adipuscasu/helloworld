@@ -14,21 +14,21 @@
           <p class="price">{{race.entryFee | currency:'USD':true}}</p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 center-block">
-            
-            <div  class="center-block">              
+
+            <div  class="center-block">
               <div *ngIf="race.isRacing" >
                   <div class="center-block">
                       <p class="status">Racing</p>
                     </div>
                   <button class="btn btn-danger center-block" (click)="cancelRace()">Cancel Race</button>
-              </div>  
+              </div>
               <div *ngIf="!race.isRacing" >
                   <div class="center-block">
                       <p class="status">Not racing</p>
                     </div>
                   <button class="btn btn-primary center-block" *ngIf="!race.isRacing" (click)="enterRace()">Enter Race</button>
-              </div>            
-            </div>         
+              </div>
+            </div>
         </div>
       </div>
     </div>
